@@ -39,13 +39,13 @@ This project demonstrates a full **frontend + backend + ML pipeline** integratio
 ## **Screenshots**
 
 ### Chat Interface
-![Chat Interface](screenshots/Screenshot 2025-11-19 151931.png)
+![Chat Interface](screenshots/Chat Interface.png)
 
 ### Pie Chart
-![Pie Chart](screenshots/Screenshot 2025-11-19 152029.png)
+![Pie Chart](screenshots/Pie Chart.png)
 
 ### Line Graph
-![Line Graph](screenshots/Screenshot 2025-11-19 151953.png)
+![Line Graph](screenshots/Line Graph.png)
 
 ---
 
