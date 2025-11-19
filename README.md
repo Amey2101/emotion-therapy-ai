@@ -39,7 +39,9 @@ This project demonstrates a full **frontend + backend + ML pipeline** integratio
 ## **Screenshots**
 
 ![Chat Interface](screenshots/Screenshot 2025-11-19 151931.png)
+
 ![Pie Chart](screenshots/Screenshot 2025-11-19 152029.png)
+
 ![Line Graph](screenshots/Screenshot 2025-11-19 151953.png)
 ---
 
