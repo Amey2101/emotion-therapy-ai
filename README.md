@@ -38,11 +38,25 @@ This project demonstrates a full **frontend + backend + ML pipeline** integratio
 
 ## **Screenshots**
 *(Add screenshots here of your dashboard, chat interface, and charts)*
-
-
+![]
+![Chat Interface](screenshots/Screenshot 2025-11-19 151931.png)
+![Pie Chart](screenshots/Screenshot 2025-11-19 152029.png)
+![Line Graph](screenshots/Screenshot 2025-11-19 151953.png)
 ---
 
 ## **Setup Instructions**
 1. Clone the repository:
 ```bash
 git clone https://github.com/<your-username>/emotion-therapy-ai.git
+
+2. Navigate to backend:
+cd backend
+pip install -r requirements.txt
+python app.py
+
+3. Open a new terminal and navigate to frontend
+cd frontend
+npm install
+npm start
+
+4. Open the app in your browser at http://localhost:3000
