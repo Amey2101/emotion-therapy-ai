@@ -1,0 +1,75 @@
+/* ---------- Main Chat Container ---------- */
+.chat-container {
+  text-align: center;
+  padding: 40px;
+  max-width: 650px;
+  margin: 0 auto;
+  font-family: "Inter", sans-serif;
+}
+
+/* ---------- Title ---------- */
+.chat-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #222;
+}
+
+/* ---------- Textarea ---------- */
+.chat-textarea {
+  width: 100%;
+  padding: 14px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  resize: vertical;
+  min-height: 110px;
+  transition: border 0.2s;
+}
+
+.chat-textarea:focus {
+  border-color: #007bff;
+}
+
+/* ---------- Button ---------- */
+.chat-button {
+  margin-top: 15px;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border-radius: 8px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.chat-button:hover {
+  background-color: #0066d6;
+  transform: translateY(-1px);
+}
+
+/* ---------- Loading Text ---------- */
+.loading-text,
+.app-loading {
+  margin-top: 15px;
+  font-style: italic;
+  color: #555;
+}
+
+/* ---------- Result Card ---------- */
+.result-box,
+.app-result-box {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #f7f7f7;
+  text-align: left;
+  border: 1px solid #e0e0e0;
+}
+
+/* ---------- Mood Dashboard Wrapper ---------- */
+.dashboard-wrapper {
+  margin-top: 40px;
+}
