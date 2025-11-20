@@ -1,7 +1,5 @@
 import "./App.css";
-
 import MoodDashboard from "./MoodDashboard";
-
 import React, { useState } from "react";
 
 function App() {
@@ -14,7 +12,7 @@ function App() {
     setLoading(true);
 
     try {
-      const response = await fetch("https://emotion-therapy-ai.onrender.com/analyze", {
+      const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/analyze`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -44,7 +42,7 @@ function App() {
         onChange={(e) => setText(e.target.value)}
       />
 
-      <button className = "chat-button" onClick={analyzeEmotion}>
+      <button className="chat-button" onClick={analyzeEmotion}>
         Analyze Emotion
       </button>
 
@@ -57,55 +55,11 @@ function App() {
         </div>
       )}
 
-      {/* ---- Mood Dashboard ---- */}
       <div className="dashboard-wrapper">
         <MoodDashboard />
       </div>
     </div>
   );
-
 }
-
-/*const styles = {
-  container: {
-    textAlign: "center",
-    padding: "40px",
-    maxWidth: "600px",
-    margin: "0 auto",
-  },
-  title: {
-    fontSize: "2rem",
-    marginBottom: "20px",
-  },
-  textarea: {
-    width: "100%",
-    padding: "12px",
-    fontSize: "1rem",
-    borderRadius: "6px",
-    border: "1px solid #ccc",
-    outline: "none",
-  },
-  button: {
-    marginTop: "15px",
-    padding: "10px 20px",
-    fontSize: "1rem",
-    borderRadius: "6px",
-    backgroundColor: "#007bff",
-    color: "white",
-    border: "none",
-    cursor: "pointer",
-  },
-  loading: {
-    marginTop: "15px",
-    fontStyle: "italic",
-  },
-  resultBox: {
-    marginTop: "20px",
-    padding: "15px",
-    borderRadius: "8px",
-    backgroundColor: "#f1f1f1",
-    textAlign: "left",
-  },
-};*/
 
 export default App;

@@ -31,7 +31,7 @@ function MoodDashboard() {
   const [history, setHistory] = useState([]);
 
   useEffect(() => {
-    fetch("https://emotion-therapy-ai.onrender.com/history")
+    fetch(`${process.env.REACT_APP_BACKEND_URL}/history`)
       .then(res => res.json())
       .then(data => setHistory(data))
       .catch(err => console.error(err));
@@ -90,22 +90,21 @@ function MoodDashboard() {
   };
 
   const pieData = {
-  labels: Object.keys(moodCounts),
-  datasets: [
-    {
-      data: Object.values(moodCounts),
-      backgroundColor: [
-        "#ff6b6b", // angry
-        "#ffd93d", // fear
-        "#6c5ce7", // sad
-        "#b2bec3", // neutral
-        "#55efc4"  // happy
-      ],
-      borderWidth: 1,
-    },
-  ],
+    labels: Object.keys(moodCounts),
+    datasets: [
+      {
+        data: Object.values(moodCounts),
+        backgroundColor: [
+          "#ff6b6b", // angry
+          "#ffd93d", // fear
+          "#6c5ce7", // sad
+          "#b2bec3", // neutral
+          "#55efc4"  // happy
+        ],
+        borderWidth: 1,
+      },
+    ],
   };
-
 
   const mostFrequentMood =
     Object.keys(moodCounts).reduce((a, b) =>
