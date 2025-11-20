@@ -31,7 +31,7 @@ function MoodDashboard() {
   const [history, setHistory] = useState([]);
 
   useEffect(() => {
-    fetch("http://127.0.0.1:8000/history")
+    fetch("https://emotion-therapy-ai.onrender.com/history")
       .then(res => res.json())
       .then(data => setHistory(data))
       .catch(err => console.error(err));
